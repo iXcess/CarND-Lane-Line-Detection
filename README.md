@@ -43,6 +43,8 @@ Do note that the final pipeline does not include edge detection as color thresho
 
 ### Perspective Transform
 This is the process where we take a bounding area and then apply a transformation to the image to provide us a bird eye view. This process is particularly important as we can do lane detection easily. The image will be transformed back with the inverse transform matrix.
+
+
 ![Before Perspective Transformation Image](./documentation_images/before.jpg)
 ![Perspective Transformation Image](./documentation_images/perspective_transform.jpg)
 
