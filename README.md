@@ -19,4 +19,19 @@ The goals / steps of this project are the following:
 
 The images for camera calibration are stored in the folder called `camera_cal`.  The images in `test_images` are for testing.
 
-*The Approach*
+The Approach
+---
+
+## The camera calibration code
+
+More info can be found in the [OpenCV Camera Calibration]. Camera calibration must be done because different camera have different degree of distortion in them. This is due to different lens make, focal points etc. Even the same camera from the same brand and make will slightly differ.
+
+Camera calibration can also help in determining the relation between the image pixels and real world unit length.
+![Lanes Image](./documentation_images/camera_cal.jpg)
+
+
+
+
+
+
+[OpenCV Camera Calibration]:https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
