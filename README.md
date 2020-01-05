@@ -58,7 +58,7 @@ The distance from center makes two assumptions:
 
 Radius of curvature formula is given by:
 
-$$R_{curve} = \frac{[1+(2Ay+B)^{2}]^{3/2}}{\left |2A\right |}$$
+$R_{curve} = \frac{[1+(2Ay+B)^{2}]^{3/2}}{\left |2A\right |}$
 
 [here]:https://www.youtube.com/watch?v=uihBwtPIBxM
 [OpenCV Sobel Documentation]:https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/sobel_derivatives/sobel_derivatives.html
