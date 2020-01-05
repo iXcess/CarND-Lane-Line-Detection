@@ -44,14 +44,21 @@ Do note that the final pipeline does not include edge detection as color thresho
 ### Perspective Transform
 This is the process where we take a bounding area and then apply a transformation to the image to provide us a bird eye view. This process is particularly important as we can do lane detection easily. The image will be transformed back with the inverse transform matrix.
 
-
-![Before Perspective Transformation Image](./documentation_images/before.jpg)
+<p align="center">
+  <img width="460" height="300" src="./documentation_images/before.jpg">
+</p>
 ![Perspective Transformation Image](./documentation_images/perspective_transform.jpg)
 
 
+### Determine the curvature of the lane
+The distance from center makes two assumptions:
 
+1. The camera is located dead-center on the car
+2. The lane width follows US regulation (3.7m)
 
+Radius of curvature formula is given by:
 
+$$R_{curve} = \frac{[1+(2Ay+B)^{2}]^{3/2}}{\left |2A\right |}$$
 
 [here]:https://www.youtube.com/watch?v=uihBwtPIBxM
 [OpenCV Sobel Documentation]:https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/sobel_derivatives/sobel_derivatives.html
