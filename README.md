@@ -47,6 +47,7 @@ This is the process where we take a bounding area and then apply a transformatio
 <p align="center">
   <img width="460" height="300" src="./documentation_images/before.jpg">
 </p>
+
 ![Perspective Transformation Image](./documentation_images/perspective_transform.jpg)
 
 
@@ -57,6 +58,7 @@ The distance from center makes two assumptions:
 2. The lane width follows US regulation (3.7m)
 
 Radius of curvature formula is given by:
+
 ![formula](./documentation_images/formula.jpg)
 
 [here]:https://www.youtube.com/watch?v=uihBwtPIBxM
