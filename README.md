@@ -27,7 +27,7 @@ The Approach
 More info can be found in the [OpenCV Camera Calibration]. Camera calibration must be done because different camera have different degree of distortion in them. This is due to different lens make, focal points etc. Even the same camera from the same brand and make will slightly differ.
 
 Camera calibration can also help in determining the relation between the image pixels and real world unit length. So ever single time the video frame has to go through undistortion before being processed.
-![Lanes Image](./documentation_images/camera_cal.jpg)
+![Camera Calibration Image](./documentation_images/camera_cal.jpg)
 
 ### Changing Color Space
 Image pixels are commonly known in the RGB Color Space. However, it is easier to perform color thresholding if the RGB is converted into the HSV color space. HSV gives the hue, saturation and value of the pixel of interest. To pick the threshold the yellow lane lines from the image from just the Hue value from the HSV Color Space is much easier then knowing how much red, green and blue there is to obtain a wide range of yellow.
@@ -40,6 +40,13 @@ Also read the [OpenCV Sobel Documentation].
 Due to saving the computational power, we can only convolute the Sobel kernel in the X direction.
 
 Do note that the final pipeline does not include edge detection as color thresholding has been proven in the test videos that it has a higher accuracy in expense of computational speed.
+
+### Perspective Transform
+This is the process where we take a bounding area and then apply a transformation to the image to provide us a bird eye view. This process is particularly important as we can do lane detection easily. The image will be transformed back with the inverse transform matrix.
+![Before Perspective Transformation Image](./documentation_images/before.jpg)
+![Perspective Transformation Image](./documentation_images/perspective_transform.jpg)
+
+
 
 
 
